@@ -15,9 +15,6 @@ import javax.swing.text.DefaultHighlighter;
 import javax.swing.text.Document;
 import javax.swing.text.Highlighter;
 import javax.swing.text.JTextComponent;
-
-import cei521.controlflowtestingtool.ControlFlowTestingToolUI.HighLightSourceCode;
-
 import javax.swing.JFrame;
 import javax.swing.JTextPane;
 import java.awt.BorderLayout;
