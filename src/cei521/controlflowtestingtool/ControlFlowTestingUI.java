@@ -33,7 +33,7 @@ public class ControlFlowTestingUI  extends javax.swing.JFrame {
 
 	/**
 	 * ekamato
-	 * x2
+	 * x22
 	 * 	 * Launch the application.
 	 */
 	public static void main(String[] args) {
