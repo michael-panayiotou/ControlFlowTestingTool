@@ -148,15 +148,6 @@ public class ControlFlowTestingUI  extends javax.swing.JFrame {
 		lblFloats.setBounds(101, 231, 46, 14);
 		paneBurger.add(lblFloats);
 		
-		JButton btnCount = new JButton("Count");
-		btnCount.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				count(textArea, lblIf, lblSwitch, lblFor, lblWhile, lblIntegers, lblFloats, lblStrings);
-			}
-		});
-		btnCount.setBounds(16, 298, 75, 23);
-		paneBurger.add(btnCount);
-		
 		JButton btnIntegers = new JButton("Integers");
 		btnIntegers.setBounds(16, 168, 75, 29);
 		paneBurger.add(btnIntegers);
