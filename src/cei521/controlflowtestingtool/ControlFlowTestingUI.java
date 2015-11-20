@@ -90,35 +90,47 @@ public class ControlFlowTestingUI  extends javax.swing.JFrame {
 	    JLabel lblCount;
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 844, 465);
+		frame.setBounds(100, 100, 963, 605);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.getContentPane().setLayout(new CardLayout(0, 0));
+		frame.getContentPane().setLayout(null);
 		
-		JPanel paneBurger = new JPanel();
-		frame.getContentPane().add(paneBurger, "name_22451503339373");
+		Algorithm Alg=new Algorithm();
+		Alg.algorithm("int main(){\n"
+				+ "if(x>y){\n"
+				+ "int F=0; "
+				+ "if(y>f){\n"
+				+ "print(\"y is bigger than f\");\n"
+				+ "}\n"
+				+ "print(\"ss\");\n"
+				+ "}"
+				+ "print(\"program is done\")\n"
+				+ "}");
 		
-		JButton btnWhile = new JButton("While");
-		btnWhile.setBounds(16, 58, 75, 29);
+		JPanel panelBurger = new JPanel();
+		panelBurger.setBounds(0, 0, 957, 583);
+		frame.getContentPane().add(panelBurger);
+		
+		JButton btnWhile = new JButton("while");
+		btnWhile.setBounds(16, 58, 117, 29);
+		panelBurger.setLayout(null);
 
 		JTextArea textArea = new JTextArea();
-		textArea.setBounds(169, 63, 501, 355);
-		paneBurger.add(textArea);
+		textArea.setBounds(169, 63, 684, 500);
+		panelBurger.add(textArea);
+		panelBurger.add(btnWhile);
 		
-		paneBurger.setLayout(null);
-		paneBurger.add(btnWhile);
-		
-		JButton btnFor = new JButton("For");
 
-		btnFor.setBounds(16, 85, 75, 29);
-		paneBurger.add(btnFor);
+		JButton btnFor = new JButton("for");
+		btnFor.setBounds(16, 85, 117, 29);
+		panelBurger.add(btnFor);
 		
-		JButton btnIf = new JButton("If");
-		btnIf.setBounds(16, 112, 75, 29);
-		paneBurger.add(btnIf);
+		JButton btnIf = new JButton("if");
+		btnIf.setBounds(16, 112, 117, 29);
+		panelBurger.add(btnIf);
 		
-		JButton btnSwitch = new JButton("Switch");
-		btnSwitch.setBounds(16, 140, 75, 29);
-		paneBurger.add(btnSwitch);
+		JButton btnSwitch = new JButton("switch");
+		btnSwitch.setBounds(16, 140, 117, 29);
+		panelBurger.add(btnSwitch);
 		
 		JLabel lblWhile = new JLabel(": 0");
 		lblWhile.setBounds(101, 68, 46, 14);
@@ -189,10 +201,12 @@ public class ControlFlowTestingUI  extends javax.swing.JFrame {
 		
 		
 		JPanel panelMenu = new JPanel();
-		frame.getContentPane().add(panelMenu, "name_22460779132613");
+		panelMenu.setBounds(-1640, -1050, 844, 443);
+		frame.getContentPane().add(panelMenu);
 		
 		JPanel panelChicken = new JPanel();
-		frame.getContentPane().add(panelChicken, "name_22464482082225");
+		panelChicken.setBounds(-1640, -1050, 844, 443);
+		frame.getContentPane().add(panelChicken);
 		
 		textArea.getDocument().addDocumentListener(new DocumentListener() {
 
