@@ -88,154 +88,150 @@ public class ControlFlowTestingUI  extends javax.swing.JFrame {
 	 * Initialize the contents of the frame.
 	 */
 	    JLabel lblCount;
-	private void initialize() {
-		frame = new JFrame();
-		frame.setBounds(100, 100, 963, 605);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.getContentPane().setLayout(null);
-		
-		Algorithm Alg=new Algorithm();
-		Alg.algorithm("int main(){\n"
-				+ "if(x>y){\n"
-				+ "int F=0; "
-				+ "if(y>f){\n"
-				+ "print(\"y is bigger than f\");\n"
-				+ "}\n"
-				+ "print(\"ss\");\n"
-				+ "}"
-				+ "print(\"program is done\")\n"
-				+ "}");
-		
-		JPanel panelBurger = new JPanel();
-		panelBurger.setBounds(0, 0, 957, 583);
-		frame.getContentPane().add(panelBurger);
-		
-		JButton btnWhile = new JButton("while");
-		btnWhile.setBounds(16, 58, 117, 29);
-		panelBurger.setLayout(null);
+	    private void initialize() {
+			frame = new JFrame();
+			frame.setBounds(100, 100, 844, 465);
+			frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			frame.getContentPane().setLayout(new CardLayout(0, 0));
+			Algorithm Alg=new Algorithm();
+			Alg.algorithm("int main(){\n"
+					+ "if(x>y){\n"
+					+ "int F=0; "
+					+ "if(y>f){\n"
+					+ "print(\"y is bigger than f\");\n"
+					+ "}\n"
+					+ "print(\"ss\");\n"
+					+ "}"
+					+ "print(\"program is done\")\n"
+					+ "}");
+			JPanel paneBurger = new JPanel();
+			frame.getContentPane().add(paneBurger, "name_22451503339373");
+			
+			JButton btnWhile = new JButton("While");
+			btnWhile.setBounds(16, 58, 75, 29);
 
-		JTextArea textArea = new JTextArea();
-		textArea.setBounds(169, 63, 684, 500);
-		panelBurger.add(textArea);
-		panelBurger.add(btnWhile);
-		
+			JTextArea textArea = new JTextArea();
+			textArea.setBounds(169, 63, 501, 355);
+			paneBurger.add(textArea);
+			
+			paneBurger.setLayout(null);
+			paneBurger.add(btnWhile);
+			
+			JButton btnFor = new JButton("For");
 
-		JButton btnFor = new JButton("for");
-		btnFor.setBounds(16, 85, 117, 29);
-		panelBurger.add(btnFor);
-		
-		JButton btnIf = new JButton("if");
-		btnIf.setBounds(16, 112, 117, 29);
-		panelBurger.add(btnIf);
-		
-		JButton btnSwitch = new JButton("switch");
-		btnSwitch.setBounds(16, 140, 117, 29);
-		panelBurger.add(btnSwitch);
-		
-		JLabel lblWhile = new JLabel(": 0");
-		lblWhile.setBounds(101, 68, 46, 14);
-		paneBurger.add(lblWhile);
-		
-		JLabel lblFor = new JLabel(": 0");
-		lblFor.setBounds(101, 92, 46, 14);
-		paneBurger.add(lblFor);
-		
-		JLabel lblIf = new JLabel(": 0");
-		lblIf.setBounds(101, 119, 46, 14);
-		paneBurger.add(lblIf);
-		
-		JLabel lblSwitch = new JLabel(": 0");
-		lblSwitch.setBounds(101, 147, 46, 14);
-		paneBurger.add(lblSwitch);
-		
-		JLabel lblIntegers = new JLabel(": 0");
-		lblIntegers.setBounds(101, 175, 46, 14);
-		paneBurger.add(lblIntegers);
-		
-		JLabel lblStrings = new JLabel(": 0");
-		lblStrings.setBounds(101, 203, 46, 14);
-		paneBurger.add(lblStrings);
-		
-		JLabel lblFloats = new JLabel(": 0");
-		lblFloats.setBounds(101, 231, 46, 14);
-		paneBurger.add(lblFloats);
-		
-		JButton btnIntegers = new JButton("Integers");
-		btnIntegers.setBounds(16, 168, 75, 29);
-		paneBurger.add(btnIntegers);
-		
-		JButton btnStrings = new JButton("Strings");
-		btnStrings.setBounds(16, 196, 75, 29);
-		paneBurger.add(btnStrings);
-		
-		JButton btnFloats = new JButton("Floats");
-		btnFloats.setBounds(16, 224, 75, 29);
-		paneBurger.add(btnFloats);
-		
+			btnFor.setBounds(16, 85, 75, 29);
+			paneBurger.add(btnFor);
+			
+			JButton btnIf = new JButton("If");
+			btnIf.setBounds(16, 112, 75, 29);
+			paneBurger.add(btnIf);
+			
+			JButton btnSwitch = new JButton("Switch");
+			btnSwitch.setBounds(16, 140, 75, 29);
+			paneBurger.add(btnSwitch);
+			
+			JLabel lblWhile = new JLabel(": 0");
+			lblWhile.setBounds(101, 68, 46, 14);
+			paneBurger.add(lblWhile);
+			
+			JLabel lblFor = new JLabel(": 0");
+			lblFor.setBounds(101, 92, 46, 14);
+			paneBurger.add(lblFor);
+			
+			JLabel lblIf = new JLabel(": 0");
+			lblIf.setBounds(101, 119, 46, 14);
+			paneBurger.add(lblIf);
+			
+			JLabel lblSwitch = new JLabel(": 0");
+			lblSwitch.setBounds(101, 147, 46, 14);
+			paneBurger.add(lblSwitch);
+			
+			JLabel lblIntegers = new JLabel(": 0");
+			lblIntegers.setBounds(101, 175, 46, 14);
+			paneBurger.add(lblIntegers);
+			
+			JLabel lblStrings = new JLabel(": 0");
+			lblStrings.setBounds(101, 203, 46, 14);
+			paneBurger.add(lblStrings);
+			
+			JLabel lblFloats = new JLabel(": 0");
+			lblFloats.setBounds(101, 231, 46, 14);
+			paneBurger.add(lblFloats);
+			
+			JButton btnIntegers = new JButton("Integers");
+			btnIntegers.setBounds(16, 168, 75, 29);
+			paneBurger.add(btnIntegers);
+			
+			JButton btnStrings = new JButton("Strings");
+			btnStrings.setBounds(16, 196, 75, 29);
+			paneBurger.add(btnStrings);
+			
+			JButton btnFloats = new JButton("Floats");
+			btnFloats.setBounds(16, 224, 75, 29);
+			paneBurger.add(btnFloats);
+			
 
-		
-		btnWhile.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				
-				highlight(textArea, "while");
-			}
-		});
-		
-		btnFor.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				highlight(textArea, "for");
-			}
-		});
-		
-		btnIf.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				highlight(textArea, "if");
-			}
-		});
-		
-		btnSwitch.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				highlight(textArea, "switch");
-			}
-		});
-		
-		
-		JPanel panelMenu = new JPanel();
-		panelMenu.setBounds(-1640, -1050, 844, 443);
-		frame.getContentPane().add(panelMenu);
-		
-		JPanel panelChicken = new JPanel();
-		panelChicken.setBounds(-1640, -1050, 844, 443);
-		frame.getContentPane().add(panelChicken);
-		
-		textArea.getDocument().addDocumentListener(new DocumentListener() {
+			
+			btnWhile.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent e) {
+					
+					highlight(textArea, "while");
+				}
+			});
+			
+			btnFor.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent e) {
+					highlight(textArea, "for");
+				}
+			});
+			
+			btnIf.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent e) {
+					highlight(textArea, "if");
+				}
+			});
+			
+			btnSwitch.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent e) {
+					highlight(textArea, "switch");
+				}
+			});
+			
+			
+			JPanel panelMenu = new JPanel();
+			frame.getContentPane().add(panelMenu, "name_22460779132613");
+			
+			JPanel panelChicken = new JPanel();
+			frame.getContentPane().add(panelChicken, "name_22464482082225");
+			
+			textArea.getDocument().addDocumentListener(new DocumentListener() {
 
-			@Override
-			public void changedUpdate(DocumentEvent e) {
-				// TODO Auto-generated method stub
-				count(textArea, lblIf, lblSwitch, lblFor, lblWhile, lblIntegers, lblFloats, lblStrings);
-				
-			}
+				@Override
+				public void changedUpdate(DocumentEvent e) {
+					// TODO Auto-generated method stub
+					count(textArea, lblIf, lblSwitch, lblFor, lblWhile, lblIntegers, lblFloats, lblStrings);
+					
+				}
 
-			@Override
-			public void insertUpdate(DocumentEvent e) {
-				// TODO Auto-generated method stub
-				count(textArea, lblIf, lblSwitch, lblFor, lblWhile, lblIntegers, lblFloats, lblStrings);
+				@Override
+				public void insertUpdate(DocumentEvent e) {
+					// TODO Auto-generated method stub
+					count(textArea, lblIf, lblSwitch, lblFor, lblWhile, lblIntegers, lblFloats, lblStrings);
 
-				
-			}
+					
+				}
 
-			@Override
-			public void removeUpdate(DocumentEvent e) {
-				// TODO Auto-generated method stub
-				count(textArea, lblIf, lblSwitch, lblFor, lblWhile, lblIntegers, lblFloats, lblStrings);
+				@Override
+				public void removeUpdate(DocumentEvent e) {
+					// TODO Auto-generated method stub
+					count(textArea, lblIf, lblSwitch, lblFor, lblWhile, lblIntegers, lblFloats, lblStrings);
 
-			}
+				}
 
-	    });
-		
-		
-	}
+		    });
+			
+			
+		}
 	
 	public void count(JTextComponent textComp, JLabel lblIf, JLabel lblSwitch, JLabel lblFor, JLabel lblWhile, JLabel lblIntegers, JLabel lblFloats, JLabel lblStrings){
 		removeComments(textComp);
