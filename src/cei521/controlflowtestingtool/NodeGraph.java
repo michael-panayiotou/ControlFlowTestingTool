@@ -7,7 +7,8 @@ public class NodeGraph {
 	
 	ArrayList<Node> NodeList = new ArrayList<Node>();
 	ArrayList<edge<Integer, Integer>> EdgeList = new ArrayList<edge<Integer, Integer>>();
-	public NodeGraph() {  
+	public NodeGraph() { 
+		
 	}
 
 	public void add_edge(int one, int two) {

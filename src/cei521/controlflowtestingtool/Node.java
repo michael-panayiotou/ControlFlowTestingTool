@@ -7,6 +7,7 @@ public class Node {
 	int depth;
 	
 	public Node() {
+		
 		// TODO Auto-generated constructor stub
 	}
 	public Node(String mytext,char mytype,int mydepth) {
