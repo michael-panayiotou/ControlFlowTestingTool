@@ -105,18 +105,12 @@ public class Algorithm {
 
 		}
 
-		//NodeG.print_Nodes();
-		//NodeG.print_Edges();
 		graphToGraphML(NodeG);
 	}
 	
     public void graphToGraphML(NodeGraph NodeG){
-    	
-//    	System.out.println(NodeG.NodeList.get(2).text);   	
+    	 	
     	String filename = graphmlInit();
-//    	addNodeToGraphml(filename, 2, NodeG.NodeList.get(2).text,NodeG.NodeList.get(2).type);
-//    	addNodeToGraphml(filename, 3, NodeG.NodeList.get(3).text,NodeG.NodeList.get(3).type);
-//    	addEdgeToGraphml(filename, 0, 3, 2);
     	for (int i = 0; i < NodeG.NodeList.size(); i++) {
     		addNodeToGraphml(filename, i, NodeG.NodeList.get(i).text,NodeG.NodeList.get(i).type);
     	}
